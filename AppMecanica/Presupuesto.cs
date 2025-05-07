@@ -63,17 +63,13 @@ namespace AppMecanica
             {
                 txtTitular.Focus();
             }));
+
             OcultarAsteriscos();
-            AttachDecimalOnly(
+
+            AttachOnlyDigits(
                 txtTelefono, txtAño, txtPrecioUni,
                 txtCantidadHoras, txtPrecioHora, txtKm);
-            BloquearCopiarPegar(
-                txtTitular, txtTelefono, txtDomicilio,
-                txtModelo, txtMarca, txtPatente, txtAño, txtKm);
             MaximoRango();
-            BloquearCopiarPegar(nupCantidad);
-            this.KeyPreview = true;
-            this.KeyDown += new KeyEventHandler(Form1_KeyDown);
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -344,44 +340,20 @@ namespace AppMecanica
                 }
             }
         }
-        private void AttachDecimalOnly(params TextBox[] textBoxes)
+        private void AttachOnlyDigits(params TextBox[] textBoxes)
         {
             foreach (var txt in textBoxes)
             {
                 txt.KeyPress += (s, e) =>
                 {
-                    if (!char.IsControl(e.KeyChar)
-                        && !char.IsDigit(e.KeyChar)
-                        && e.KeyChar != ','
-                        && e.KeyChar != '.')
+                    if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
                     {
-                        e.Handled = true;
-                    }
-                    if ((e.KeyChar == ',' || e.KeyChar == '.')
-                        && (txt.Text.Contains(",") || txt.Text.Contains(".")))
-                    {
-                        e.Handled = true;
+                        e.Handled = true; // Bloquea cualquier cosa que no sea dígito o control
                     }
                 };
             }
         }
-        private void BloquearCopiarPegar(params TextBox[] textBoxes)
-        {
-            foreach (var textBox in textBoxes)
-            {
-                textBox.ContextMenuStrip = new ContextMenuStrip();
-                textBox.KeyDown += (s, e) =>
-                {
-                    if (e.Control && (e.KeyCode == Keys.C
-                                      || e.KeyCode == Keys.V
-                                      || e.KeyCode == Keys.X))
-                    {
-                        e.SuppressKeyPress = true;
-                        e.Handled = true;
-                    }
-                };
-            }
-        }
+       
         private void Presupuesto_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (!cierreDesdeBoton)
@@ -416,13 +388,6 @@ namespace AppMecanica
         {
             FormAlerta alerta = new FormAlerta("comandos");
             alerta.ShowDialog();
-        }
-        private void BloquearCopiarPegar(NumericUpDown numericUpDown)
-        {
-            if (numericUpDown.Controls[1] is TextBox textBox)
-            {
-                textBox.ShortcutsEnabled = false;
-            }
         }
     }
 }
