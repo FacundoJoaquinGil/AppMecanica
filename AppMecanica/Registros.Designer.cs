@@ -73,7 +73,7 @@
             dgvRegistros.Name = "dgvRegistros";
             dgvRegistros.ReadOnly = true;
             dgvRegistros.RowHeadersWidth = 51;
-            dgvRegistros.Size = new Size(974, 622);
+            dgvRegistros.Size = new Size(974, 586);
             dgvRegistros.TabIndex = 0;
             dgvRegistros.CellContentClick += dgvRegistros_CellContentClick;
             // 
@@ -83,7 +83,7 @@
             btnVolverRegistro.FlatStyle = FlatStyle.Flat;
             btnVolverRegistro.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btnVolverRegistro.ForeColor = Color.FromArgb(51, 51, 51);
-            btnVolverRegistro.Location = new Point(1023, 707);
+            btnVolverRegistro.Location = new Point(1023, 616);
             btnVolverRegistro.Margin = new Padding(3, 2, 3, 2);
             btnVolverRegistro.Name = "btnVolverRegistro";
             btnVolverRegistro.Size = new Size(139, 60);
@@ -98,7 +98,7 @@
             btnDetalles.FlatStyle = FlatStyle.Flat;
             btnDetalles.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btnDetalles.ForeColor = Color.FromArgb(51, 51, 51);
-            btnDetalles.Location = new Point(1023, 624);
+            btnDetalles.Location = new Point(1023, 534);
             btnDetalles.Margin = new Padding(3, 2, 3, 2);
             btnDetalles.Name = "btnDetalles";
             btnDetalles.Size = new Size(139, 60);
@@ -141,7 +141,7 @@
             // flpPaginas
             // 
             flpPaginas.BackColor = Color.Transparent;
-            flpPaginas.Location = new Point(193, 734);
+            flpPaginas.Location = new Point(192, 681);
             flpPaginas.Name = "flpPaginas";
             flpPaginas.Size = new Size(648, 33);
             flpPaginas.TabIndex = 20;
@@ -156,7 +156,7 @@
             btnAnteriorDGV.FlatStyle = FlatStyle.Flat;
             btnAnteriorDGV.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             btnAnteriorDGV.ForeColor = Color.White;
-            btnAnteriorDGV.Location = new Point(88, 738);
+            btnAnteriorDGV.Location = new Point(87, 685);
             btnAnteriorDGV.Margin = new Padding(3, 2, 3, 2);
             btnAnteriorDGV.Name = "btnAnteriorDGV";
             btnAnteriorDGV.Size = new Size(99, 29);
@@ -175,7 +175,7 @@
             btnSiguienteDGV.FlatStyle = FlatStyle.Flat;
             btnSiguienteDGV.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             btnSiguienteDGV.ForeColor = Color.White;
-            btnSiguienteDGV.Location = new Point(847, 738);
+            btnSiguienteDGV.Location = new Point(846, 685);
             btnSiguienteDGV.Margin = new Padding(3, 2, 3, 2);
             btnSiguienteDGV.Name = "btnSiguienteDGV";
             btnSiguienteDGV.Size = new Size(99, 29);
@@ -206,7 +206,7 @@
             btnManualRgstro.FlatStyle = FlatStyle.Flat;
             btnManualRgstro.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnManualRgstro.ForeColor = Color.White;
-            btnManualRgstro.Location = new Point(92, 0);
+            btnManualRgstro.Location = new Point(103, 0);
             btnManualRgstro.Margin = new Padding(1, 2, 1, 2);
             btnManualRgstro.Name = "btnManualRgstro";
             btnManualRgstro.Size = new Size(95, 25);
@@ -224,10 +224,10 @@
             btnSnRgstro.FlatStyle = FlatStyle.Flat;
             btnSnRgstro.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnSnRgstro.ForeColor = Color.White;
-            btnSnRgstro.Location = new Point(-1, 0);
+            btnSnRgstro.Location = new Point(0, 0);
             btnSnRgstro.Margin = new Padding(1, 2, 1, 2);
             btnSnRgstro.Name = "btnSnRgstro";
-            btnSnRgstro.Size = new Size(95, 25);
+            btnSnRgstro.Size = new Size(104, 25);
             btnSnRgstro.TabIndex = 129;
             btnSnRgstro.Text = "Sobre Nostros";
             btnSnRgstro.UseVisualStyleBackColor = false;
@@ -241,7 +241,7 @@
             BackColor = Color.White;
             BackgroundImage = Properties.Resources.bg1;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1184, 791);
+            ClientSize = new Size(1184, 722);
             Controls.Add(btnManualRgstro);
             Controls.Add(btnSnRgstro);
             Controls.Add(txtBuscar);
@@ -258,7 +258,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
-            MinimumSize = new Size(1200, 830);
+            MinimumSize = new Size(1100, 698);
             Name = "Registros";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Ocaranza Mecanica Software";

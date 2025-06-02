@@ -55,7 +55,7 @@
             btnVolverDetalle.FlatStyle = FlatStyle.Flat;
             btnVolverDetalle.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btnVolverDetalle.ForeColor = Color.FromArgb(51, 51, 51);
-            btnVolverDetalle.Location = new Point(1033, 717);
+            btnVolverDetalle.Location = new Point(1022, 650);
             btnVolverDetalle.Margin = new Padding(3, 2, 3, 2);
             btnVolverDetalle.Name = "btnVolverDetalle";
             btnVolverDetalle.Size = new Size(139, 60);
@@ -71,7 +71,7 @@
             btnGenerarPDF.FlatStyle = FlatStyle.Flat;
             btnGenerarPDF.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btnGenerarPDF.ForeColor = Color.FromArgb(51, 51, 51);
-            btnGenerarPDF.Location = new Point(877, 717);
+            btnGenerarPDF.Location = new Point(866, 650);
             btnGenerarPDF.Margin = new Padding(3, 2, 3, 2);
             btnGenerarPDF.Name = "btnGenerarPDF";
             btnGenerarPDF.Size = new Size(139, 60);
@@ -97,9 +97,9 @@
             panelRegistros.BackColor = Color.WhiteSmoke;
             panelRegistros.Controls.Add(panelHeader);
             panelRegistros.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            panelRegistros.Location = new Point(12, 12);
+            panelRegistros.Location = new Point(12, 3);
             panelRegistros.Name = "panelRegistros";
-            panelRegistros.Size = new Size(1150, 700);
+            panelRegistros.Size = new Size(1150, 639);
             panelRegistros.TabIndex = 62;
             // 
             // panelHeader
@@ -135,7 +135,7 @@
             pictureBox2.BackColor = Color.Transparent;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(723, 25);
-            pictureBox2.Margin = new Padding(4);
+            pictureBox2.Margin = new Padding(4, 4, 4, 4);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(122, 87);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -231,14 +231,14 @@
             BackColor = Color.White;
             BackgroundImage = Properties.Resources.bg2;
             BackgroundImageLayout = ImageLayout.Center;
-            ClientSize = new Size(1184, 791);
+            ClientSize = new Size(1184, 722);
             Controls.Add(panelRegistros);
             Controls.Add(btnGenerarPDF);
             Controls.Add(btnVolverDetalle);
             DoubleBuffered = true;
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
-            MinimumSize = new Size(1200, 830);
+            MinimumSize = new Size(1200, 761);
             Name = "DetalleRegistro";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Ocaranza Mecanica Software";
