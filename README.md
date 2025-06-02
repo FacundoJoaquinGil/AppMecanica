@@ -35,3 +35,8 @@ Código organizado y escalable: preparado para permitir futuras mejoras o nuevas
 ![2](https://github.com/user-attachments/assets/443147a2-85db-45ca-b87e-580e76442cc9)
 
 ![3](https://github.com/user-attachments/assets/ab55842d-d8d8-431c-b84d-8862b4dd42b7)
+
+<h4>Apartado registros:</h4>
+
+![registros](https://github.com/user-attachments/assets/f6da5cbc-0a18-460f-9c45-5e8fd7af529c)
+
